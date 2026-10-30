@@ -2,7 +2,12 @@
 header {
   display: flex;
   justify-content: space-around;
+  position: sticky;
 }
 nav{
   display: flex;
+}
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
 }
