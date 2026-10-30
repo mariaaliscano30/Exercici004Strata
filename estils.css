@@ -1,3 +1,4 @@
+/*cabezera*/
 
 header {
   display: flex;
@@ -5,6 +6,8 @@ header {
   position: sticky;
   align-items: center;
   padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0px 16px 13px -6px rgba(0, 0, 0, 0.03);
 }
 
 body {
@@ -19,5 +22,20 @@ body {
 .linksalado{
   display: flex;
   gap: 20px;
+}
+
+.blanco{
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px; 
+  text-decoration: none;
+  border: 1px solid #d1d5db;
+}
+.negro{
+  background-color: #000000;
+  color: #ffffff;       
+  padding: 10px 20px;
+  border-radius: 20px;     
+  text-decoration: none;
 }
 
