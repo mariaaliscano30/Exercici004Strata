@@ -3,11 +3,21 @@ header {
   display: flex;
   justify-content: space-around;
   position: sticky;
+  align-items: center;
+  padding: 15px 40px;
 }
-nav{
-  display: flex;
-}
+
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
 }
+
+.links_internos{
+  display: flex;
+  gap: 20px;
+}
+.linksalado{
+  display: flex;
+  gap: 20px;
+}
+
