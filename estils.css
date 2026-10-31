@@ -77,9 +77,11 @@ font-size: 1.5em;
     margin-right: auto;
     height: 550px;     
     position: relative;
-     height: 550px;     
+    height: 550px;     
     overflow: hidden; 
     border-radius: 20px; 
+    box-shadow:
+  6px -43px 46px 20px rgba(0, 0, 0, 0.066);
     
 }
 
