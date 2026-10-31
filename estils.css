@@ -23,6 +23,7 @@ h1{
 h3{
 color: rgb(122, 122, 122);
 font-weight: 450;
+font-size: 1.5em;
 }
 
 .links_internos{
@@ -59,15 +60,19 @@ font-weight: 450;
     flex-direction: column; 
     align-items: flex-start;
     padding: 100px;
-    gap: 50px;
     
 
 }
 .imagen-hero{
+  padding: 40px;
+  margin-top: 200px;
   border-radius: 20px;
   box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.09);
 }
 
+.linkshero{
+  margin-top: 50px;
+}
 .destacado{
   background: linear-gradient(135deg, #33c891, #1e62d0, #b163ff); 
   -webkit-background-clip: text;
