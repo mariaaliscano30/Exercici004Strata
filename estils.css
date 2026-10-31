@@ -60,8 +60,13 @@ font-size: 1.5em;
     flex-direction: column; 
     align-items: flex-start;
     padding: 100px;
-    
-
+    background-color: #ffffff;
+    background-image: 
+    radial-gradient(circle at 100% 5%, rgba(253, 164, 175, 0.4) 0%, transparent 40%), 
+    radial-gradient(circle at 100% 5%, rgba(255, 233, 169, 0.5) 0%, transparent 35%),  
+    radial-gradient(circle at 100% 5%, rgba(255, 227, 230, 0.4) 0%, transparent 40%); 
+    min-height: 1px;
+    background-image: fixed;
 }
 .imagen-hero{
   padding: 40px;
@@ -70,8 +75,17 @@ font-size: 1.5em;
   box-shadow: 0px 1px 14px 3px rgba(0, 0, 0, 0.09);
 }
 
+.transparente{
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px; 
+  text-decoration: none;
+
+}
 .linkshero{
   margin-top: 50px;
+  display: flex;
+  gap: 15px;
 }
 .destacado{
   background: linear-gradient(135deg, #33c891, #1e62d0, #b163ff); 
