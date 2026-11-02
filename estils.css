@@ -1,4 +1,4 @@
-/*cabezera*/
+/*cabecera*/
 
 header {
   display: flex;
@@ -22,7 +22,7 @@ h1{
 
 h3{
 color: rgb(122, 122, 122);
-font-weight: 450;
+font-weight: 400;
 font-size: 1.5em;
 }
 
@@ -59,7 +59,7 @@ font-size: 1.5em;
   display: flex;
     flex-direction: column; 
     align-items: flex-start;
-    padding: 100px 100px 0px 100px;
+    padding: 100px 100px 0px 150px;
     background-image: 
     radial-gradient(circle at 100% 5%, rgba(253, 164, 175, 0.4) 0%, transparent 40%), 
     radial-gradient(circle at 100% 5%, rgba(255, 233, 169, 0.5) 0%, transparent 35%),  
@@ -68,21 +68,17 @@ font-size: 1.5em;
     background-image: fixed;
 }
 .imagen-hero {
-    display: block;
+    display: inline-flex;
+    align-items: center;
     margin-top: 150px;
     margin-bottom: 0px;
     width: 100%;    
-    max-width: 1200px; 
-    margin-left: auto; 
-    margin-right: auto;
-    height: 550px;     
+    max-width: 1200px;   
     position: relative;
     height: 550px;     
     overflow: hidden; 
     border-radius: 20px; 
-    box-shadow:
-  6px -43px 46px 20px rgba(0, 0, 0, 0.066);
-    
+    box-shadow: 6px -43px 46px 20px rgba(0, 0, 0, 0.066);   
 }
 
 .imagen-hero img {
@@ -125,7 +121,36 @@ font-size: 1.5em;
   display: inline-block;
 }
 
-.Platform{
-  padding: 100px;
+/*platform*/
 
+.Platform{
+  display: flex;
+  flex-direction: column;
+  padding: 100px 100px 0px 150px;
 }
+.platform-surfaces{
+  display: flex;
+  gap: 20px;
+}
+
+.atlas{
+  background-color: rgba(0, 128, 0, 0.364);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 128, 0, 0.364);
+}
+.nexus{
+  background-color: rgba(0, 0, 255, 0.316);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 255, 0.316);
+}
+
+.canvas{
+  background-color: rgba(238, 130, 238, 0.267);
+  border-radius: 20px;
+  border: 1px solid rgba(238, 130, 238, 0.267);
+}
+.core{
+  margin-top: 20px;
+  background-color: rgba(255, 165, 0, 0.267);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 165, 0, 0.267);}
