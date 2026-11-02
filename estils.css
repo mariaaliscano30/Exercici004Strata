@@ -132,25 +132,30 @@ font-size: 1.5em;
   display: flex;
   gap: 20px;
 }
+.atlas, .nexus, .canvas {
+  flex: 1; 
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box; 
+}
 
 .atlas{
-  background-color: rgba(0, 128, 0, 0.364);
-  border-radius: 20px;
-  border: 1px solid rgba(0, 128, 0, 0.364);
+  background: linear-gradient(to top, #f0f7f2, #eaf3ec);
+  border: 1px solid#adffbf;
 }
 .nexus{
-  background-color: rgba(0, 0, 255, 0.316);
-  border-radius: 20px;
-  border: 1px solid rgba(0, 0, 255, 0.316);
+  background: linear-gradient(to top, #edf2fc, #d9e7f8);
+  border: 1px solid #b3ccff;
 }
 
 .canvas{
-  background-color: rgba(238, 130, 238, 0.267);
-  border-radius: 20px;
-  border: 1px solid rgba(238, 130, 238, 0.267);
+  background: linear-gradient(to top, #f7edfc, #e9bcff);
+  border: 1px solid #e9bcff;
 }
 .core{
   margin-top: 20px;
-  background-color: rgba(255, 165, 0, 0.267);
+  background-color:#fffaee;
   border-radius: 20px;
-  border: 1px solid rgba(255, 165, 0, 0.267);}
+  border: 1px solid #ffedc3;
+  padding: 30px;
+}
