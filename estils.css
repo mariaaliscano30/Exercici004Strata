@@ -1,13 +1,16 @@
 /*cabecera*/
 
 header {
+  position: sticky;
+  top: 0%;
   display: flex;
   justify-content: space-around;
-  position: sticky;
-  background-color: #ffffff;
   align-items: center;
-  padding: 15px 40px;
-  box-shadow: 0px 16px 13px -6px rgba(0, 0, 0, 0.03);
+  padding: 10px 10px;
+  z-index: 50;
+  backdrop-filter: blur(14px) saturate(1.4);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  border-bottom: 1px solid var(--line);
 }
 
 body {
