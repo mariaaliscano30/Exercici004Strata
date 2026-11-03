@@ -195,3 +195,7 @@ font-size: 1.5em;
   color: grey;
   text-align: center;
 }
+
+.justificar{
+  text-align:justify;
+}
