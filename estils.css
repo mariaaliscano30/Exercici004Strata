@@ -199,3 +199,8 @@ font-size: 1.5em;
 .justificar{
   text-align:justify;
 }
+
+.requadre{
+  border-radius:30px;
+  background-color: orange;
+}
