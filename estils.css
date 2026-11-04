@@ -220,7 +220,7 @@ font-size: 1.5em;
     transition: opacity .2s, transform .2s;
 }
 
-#separador{
+.separador{
     padding:40px;
     position:relative;
     display: grid;
