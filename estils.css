@@ -201,3 +201,8 @@ font-size: 1.5em;
     text-justify: auto;
     
 }
+.etiqueta{
+    background-color:sandybrown;
+    text-decoration-color: orange;
+    border-radius:30px;
+}
