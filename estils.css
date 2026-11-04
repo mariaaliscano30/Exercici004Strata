@@ -223,4 +223,10 @@ font-size: 1.5em;
 #separador{
     padding:40px;
     position:relative;
+    display: grid;
+    gap:50px;
+    align-items:start;
+    border-bottom: 1px dotted ;
+    border-bottom-color: rgba(194, 255, 123, 0.5);
+
 }
