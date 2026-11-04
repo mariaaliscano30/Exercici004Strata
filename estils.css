@@ -199,10 +199,27 @@ font-size: 1.5em;
 
 .descripcio{
     text-justify: auto;
-    
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    gap:40px;
 }
 .etiqueta{
     background-color:sandybrown;
     text-decoration-color: orange;
     border-radius:30px;
+    display:inline-flex;
+    align-items:center;
+    margin-top:4px;
+    width:max-content;
+}
+.fletxa{
+    align-self:center;
+    justify-self:end;
+    font-size:10px;
+    transition: opacity .2s, transform .2s;
+}
+
+#separador{
+
+
 }
