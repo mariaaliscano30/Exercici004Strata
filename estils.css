@@ -140,6 +140,7 @@ font-size: 1.5em;
   display: flex;
   flex-direction: column;
   padding: 100px 100px 100px 150px;
+  background-color: #ffff;
 }
 .platform-surfaces{
   display: flex;
@@ -197,4 +198,14 @@ font-size: 1.5em;
   line-height: 1.6;
   color: grey;
   text-align: center;
+}
+
+.operationalvalue{
+  background-color: #ffff;
+  padding: 100px 100px 100px 150px;
+}
+.fromthefield{
+  background-color: black;
+  color: white;
+  padding: 100px 100px 100px 150px;
 }
