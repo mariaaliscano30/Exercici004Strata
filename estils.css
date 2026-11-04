@@ -230,3 +230,11 @@ font-size: 1.5em;
     border-bottom-color: rgba(194, 255, 123, 0.5);
 
 }
+
+.separador.posicio{
+    transform: 0.8s ease-in-out;
+}
+
+.separador.posicio:hover{
+    transform:translateY(50px);
+}
