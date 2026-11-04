@@ -211,6 +211,7 @@ font-size: 1.5em;
     align-items:center;
     margin-top:4px;
     width:max-content;
+    padding:35px;
 }
 .fletxa{
     align-self:center;
@@ -220,6 +221,6 @@ font-size: 1.5em;
 }
 
 #separador{
-
-
+    padding:40px;
+    position:relative;
 }
