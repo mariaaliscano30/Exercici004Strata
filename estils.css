@@ -228,6 +228,7 @@ font-size: 1.5em;
     align-items:start;
     border-bottom: 1px dotted ;
     border-bottom-color: rgba(194, 255, 123, 0.5);
+    transition: all 0.8 ease;
 
 }
 
@@ -236,5 +237,5 @@ font-size: 1.5em;
 }
 
 .separador.posicio:hover{
-    transform:translateY(50px);
+    transform:translateX(50px);
 }
