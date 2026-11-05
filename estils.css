@@ -291,3 +291,12 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
 
 /*fromthefield*/
 
+.fromthefield {
+  background-color: #080a0c; /* Fondo casi negro */
+  /* Un gradiente sutil verde/azul en la esquina superior derecha */
+  background-image: radial-gradient(circle at 90% 10%, rgba(30, 90, 60, 0.3) 0%, transparent 50%);
+  color: white;
+  padding: 120px 50px;
+  display: flex;
+  justify-content: center;
+}
