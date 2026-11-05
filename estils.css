@@ -383,3 +383,29 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   background: linear-gradient(to right, #00ba63, #0072ff, #b163ff);
   border-radius: 16px 16px 0 0;
 }
+
+.ftf-card-header {
+  font-size: 0.75rem;
+  color: #6b7280;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.ftf-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ftf-card-row span:first-child {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+.ftf-card-value {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
