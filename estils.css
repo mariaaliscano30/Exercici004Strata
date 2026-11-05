@@ -324,3 +324,28 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+
+.marker-verde {
+  display: inline-block;
+  width: 25px;
+  height: 8px;
+  background: linear-gradient(to right, #00ba63, #0072ff);
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.ftf-title {
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 10px 0;
+  letter-spacing: -2px;
+}
+
+.ftf-subtitle {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #a0aab2;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
