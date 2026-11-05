@@ -309,3 +309,18 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   width: 100%;
   gap: 60px;
 }
+
+.ftf-left {
+  flex: 1;
+  max-width: 650px;
+}
+
+.ftf-tag {
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #a0aab2;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
