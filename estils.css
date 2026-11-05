@@ -155,7 +155,7 @@ font-size: 1.5em;
 }
 
 .atlas{
-  background: linear-gradient(to top, #fdfffe, #deffe3);
+  background: linear-gradient(to top, #daf6e8, #deffe3);
   border: 1px solid#adffbf;
 }
 .nexus{
@@ -205,11 +205,40 @@ font-size: 1.5em;
   background-color: #ffff;
   padding: 100px 100px 100px 150px;
 }
+.operationalvalue h3{
+  font-weight: 400;
+  font-size: 1em;
+  color: grey;
+}
+.marker {
+  display: inline-block;
+  width: 40px;
+  height: 12px;
+  background: linear-gradient(to right,#00ba63, #0072ff);
+  border-radius: 3px; 
+  margin-right: 10px; 
+}
+
+.marker1 {
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  background: linear-gradient(to right, #00ba63, #0072ff);
+  border-radius: 10px; 
+  margin-right: 10px; 
+}
+
+.operationalvalue h1{
+  font-weight: 500;
+  font-size: 3em;
+  color: black;
+}
 .operationalvalue-numbers{
+  background-color: #ffff;
   gap: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  padding: 10px 10px 10px 10px;
+  padding: 40px 40px 40px 40px;
   box-sizing: border-box; 
 }
 
@@ -223,17 +252,19 @@ font-size: 1.5em;
 
 .columnasnumeros{
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
+  gap: 30px;  
 }
 
 .subnumeros{
+margin-left: 10px;
+display: inline-block;
 color: grey;
 border: 1px solid #d1d5db;
 border-radius: 20px;
 padding: 5px 10px;
-background-image: 
-    radial-gradient(circle at 100% 0%, rgba(164, 173, 253, 0.4) 0%, transparent 50%),
-    radial-gradient(circle at 0% 100%, rgba(195, 255, 204, 0.5) 0%, transparent 50%);
+background-color: #ffff;
+background: linear-gradient(to right, #76ff9f81, #7787ff61);
 
 }
 
