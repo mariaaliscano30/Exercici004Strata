@@ -69,10 +69,15 @@ font-size: 1.5em;
   flex-direction: column; 
   align-items: flex-start;
   padding: 100px 100px 0px 150px;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #ffffff;
   background-image: 
-  radial-gradient(circle at 100% 5%, rgba(253, 164, 175, 0.4) 0%, transparent 40%), 
-  radial-gradient(circle at 100% 5%, rgba(255, 233, 169, 0.5) 0%, transparent 35%),  
-  radial-gradient(circle at 100% 5%, rgba(255, 227, 230, 0.4) 0%, transparent 40%);
+    radial-gradient(circle at 90% 10%, rgba(253, 164, 175, 0.5) 0%, transparent 50%), 
+    radial-gradient(circle at 100% 5%, rgba(255, 233, 169, 0.6) 0%, transparent 40%),  
+    radial-gradient(circle at 80% 0%, rgba(255, 227, 230, 0.5) 0%, transparent 50%);
 }
 
 .imagen-hero {
@@ -113,6 +118,25 @@ font-size: 1.5em;
   display: inline-block;
 }
 
+/* El contenedor que crea el script se llama .hero-graph */
+.hero-graph {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+.hero-graph canvas {
+  background: transparent !important;
+}
+
+.titol, .imagen-hero {
+  position: relative;
+  z-index: 10;
+}
 /*platform*/
 
 .negrita{
@@ -272,3 +296,4 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   color: white;
   padding: 100px 100px 100px 150px;
 }
+
