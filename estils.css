@@ -146,7 +146,7 @@ font-size: 1.5em;
   display: flex;
   gap: 20px;
 }
-.atlas, .nexus, .canvas, .core {
+.atlas, .nexus, .canvas, .core{
   flex: 1; 
   border-radius: 20px;
   padding: 30px;
@@ -154,10 +154,17 @@ font-size: 1.5em;
   align-items: flex-start;
 }
 
+.atlas:hover, .nexus:hover, .canvas:hover, .core:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .atlas{
-  background: linear-gradient(to top, #daf6e8, #deffe3);
+  background: linear-gradient(to top, #ffffff, #deffe3);
   border: 1px solid#adffbf;
 }
+
 .nexus{
   background: linear-gradient(to top, #f9fafb, #ebf4ff);
   border: 1px solid #b3ccff;
