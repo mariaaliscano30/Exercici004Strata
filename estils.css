@@ -295,7 +295,7 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   background-color: #080a0c;
   background-image: radial-gradient(circle at 90% 10%, rgba(30, 90, 60, 0.3) 0%, transparent 50%);
   color: white;
-  padding: 120px 50px;
+  padding: 100px 100px 0px 150px;
   display: flex;
   justify-content: center;
 }
@@ -365,6 +365,7 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
 .ftf-card {
   flex: 1;
   max-width: 450px;
+  margin-top: 100px;
   background-color: rgba(20, 25, 30, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -384,7 +385,7 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   border-radius: 16px 16px 0 0;
 }
 
-.ftf-card-header {
+ftf-card-header {
   font-size: 0.75rem;
   color: #6b7280;
   letter-spacing: 1px;
