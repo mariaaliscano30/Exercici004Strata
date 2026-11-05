@@ -300,3 +300,12 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   display: flex;
   justify-content: center;
 }
+
+.ftf-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+}
