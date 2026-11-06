@@ -45,6 +45,15 @@ font-size: 1.5em;
   gap: 20px;
 }
 
+.rojo{
+  display: inline-block;
+  width: 10px;
+  height: 9px;
+  background: linear-gradient(to right, #d70707, #ff2f00);
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
 .blanco{
   background-color: #ffffff;
   padding: 10px 20px;
@@ -53,6 +62,7 @@ font-size: 1.5em;
   border: 1px solid #d1d5db;
   color: grey;
 }
+
 
 .negro{
   background-color: #000000;
