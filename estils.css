@@ -112,9 +112,10 @@ font-size: 1.5em;
 .transparente{
   padding: 10px 20px;
   border-radius: 20px; 
+  color: black;
   text-decoration: none;
-
 }
+
 .linkshero{
   margin-top: 50px;
   display: flex;
@@ -148,6 +149,12 @@ font-size: 1.5em;
   position: relative;
   z-index: 10;
 }
+
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  .hero-graph {
+    display: none !important;
+  }
+
 /*platform*/
 
 .negrita{
@@ -421,3 +428,8 @@ ftf-card-header {
   font-weight: 500;
   color: #ffffff;
 }
+
+
+@media (max-width: 768px) {
+
+ 
