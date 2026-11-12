@@ -13,34 +13,18 @@ header {
   border-bottom: 1px solid var(--line);
 }
 
+
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
 }
 
-h1{
-  font-weight: 500;
-  font-size: 5em;
-}
-
-h4{
-  font-weight: 300;
-  font-size: 1.6em;
+.nav-link{
   color: grey;
+  text-decoration: none;
 }
 
-h3{
-color: rgb(122, 122, 122);
-font-weight: 400;
-font-size: 1.5em;
-}
-
-.links_internos{
-  display: flex;
-  gap: 20px;
-  color: grey;
-}
-.linksalado{
+.linksalado, .links_internos{
   display: flex;
   gap: 20px;
 }
