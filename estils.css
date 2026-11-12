@@ -258,6 +258,13 @@ font-size: 1.5em;
   margin-bottom:5px;
 }
 
+.tonic{
+  background: var(blue,red,green, yellow);
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .enllac{
   display:flex;
   align-items:center;
