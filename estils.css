@@ -294,6 +294,32 @@ font-size: 1.5em;
   text-decoration-color: #33c891;
 }
 
+.accions{
+  display:grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  gap:0;
+  border-top:1px, dashed;
+  margin-top:85px;
+  padding-top:27px;
+}
+
+.accions_c{
+  padding:22px 28px;
+  border-radius: 1px dotted;
+  font-size:11px;
+  position:relative;
+}
+
+.accions_c ::before{
+  content:"";
+  display:block;
+  width:22px;
+  height:8px;
+  border-radius:5px;
+  background: var(red,blue,green,yellow);
+  margin-bottom:19px;
+}
+
 footer{
   background:black;
   color: rgba(186,65,56);
