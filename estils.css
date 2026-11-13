@@ -251,11 +251,17 @@ font-size: 1.5em;
   transition:border-color 0.18s ease,box-shadow 0.18 ease;
 }
 
+.contenidor{
+  max-width:20px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
 .etiqueta{
-  display:grid;
+  display:flex;
+  flex-direction:column;
   grid-template-columns:  1fr,1fr,1fr,1fr;
-  gap:15px;
-  margin-bottom:5px;
+  border-top:1px dotted;
 }
 
 .tonic{
