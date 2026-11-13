@@ -377,4 +377,10 @@ footer>link a{
   align-items:center;
   justify-content:space-between;
   gap:24px;
+  font-size:40px;
+
+}
+
+.gran{
+  font-size:60px;
 }
