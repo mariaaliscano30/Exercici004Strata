@@ -115,7 +115,6 @@ font-size: 1.5em;
   color: black;
   text-decoration: none;
 }
-
 .linkshero{
   margin-top: 50px;
   display: flex;
@@ -149,12 +148,6 @@ font-size: 1.5em;
   position: relative;
   z-index: 10;
 }
-
-@media (max-width: 767px), (prefers-reduced-motion: reduce) {
-  .hero-graph {
-    display: none !important;
-  }
-
 /*platform*/
 
 .negrita{
@@ -429,7 +422,165 @@ ftf-card-header {
   color: #ffffff;
 }
 
+/*para moviles*/
+@media (max-width: 768px), (prefers-reduced-motion: reduce) {
+  .hero-graph {
+    display: none !important;
+  }
+}
 
 @media (max-width: 768px) {
+  /* Cabecera limpia: solo logo a la izquierda y botón negro a la derecha */
+  header {
+    padding: 14px 20px;
+    justify-content: space-between;
+  }
 
- 
+  header .links_internos,
+  header .blanco {
+    display: none;
+  }
+
+  /* Espaciados generales de tus secciones */
+  .hero,
+  .Platform,
+  .franja-de-missatge,
+  .operationalvalue,
+  .fromthefield {
+    padding: 60px 24px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  h1,
+  .Platform h1,
+  .operationalvalue > div > h1 {
+    font-size: 2.35em;
+    line-height: 1.15;
+  }
+
+  h1 br,
+  h3 br {
+    display: none;
+  }
+
+  /* Botones del Hero en horizontal como en la captura */
+  .linkshero {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  /* Captura del dashboard redondeada completa */
+  .imagen-hero {
+    margin-top: 40px;
+    border-radius: 14px;
+    max-height: none;
+  }
+
+  /* Tarjetas de Platform apiladas (Atlas, Nexus, Canvas, Core) */
+  .platform-surfaces {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .core {
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Franja de mensaje */
+  .missatge1 {
+    font-size: 1.3em;
+  }
+
+  .missatge2 {
+    font-size: 1.05em;
+  }
+
+  /* Operational Value con separación entre las dos métricas */
+  .titolsnumeros {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.75rem;
+  }
+
+  .columnasnumeros {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .numeros1 {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  /* From the field: texto arriba, tarjeta oscura abajo */
+  .ftf-container {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .ftf-title {
+    font-size: 4.2rem;
+  }
+
+  .ftf-card {
+    margin-top: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 24px;
+  }
+}
+
+/* MÓVIL */
+@media (max-width: 400px) {
+  .hero,
+  .Platform,
+  .franja-de-missatge,
+  .operationalvalue,
+  .fromthefield {
+    padding: 48px 18px;
+  }
+
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  h1,
+  .Platform h1,
+  .operationalvalue > div > h1 {
+    font-size: 2em;
+  }
+
+  .linkshero .negro,
+  .linkshero .transparente {
+    padding: 9px 14px;
+    font-size: 0.85rem;
+  }
+
+  .operationalvalue-numbers {
+    padding: 22px 18px;
+  }
+
+  .numeros1 h1,
+  .numeros2 h1 {
+    font-size: 2.5em;
+  }
+
+  .ftf-title {
+    font-size: 3.6rem;
+  }
+
+  .ftf-card-value {
+    font-size: 1.15rem;
+  }
+}
