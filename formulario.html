@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Demo · Strata</title>
+  <!-- Google Fonts: Inter & Instrument Serif para estética editorial B2B -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="brand" aria-label="Strata Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Strata</span>
+      </a>
+
+      <a href="/" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Strata
+      </a>
+    </div>
+  </header>
+
+  <main class="main-section">
+    <div class="container demo-grid">
+      <!-- Columna izquierda: Copy y propuesta de valor -->
+      <section class="demo-info">
+        <span class="eyebrow">Book a Demo</span>
+        <h1 class="headline">See what your firm is writing off.</h1>
+        <p class="subheadline">
+          Thirty minutes, built around how your firm actually works. No generic tour.
+        </p>
+
+        <ul class="benefits-list">
+          <li class="benefit-item">
+            <span class="benefit-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong>Tailored workflow walkthrough</strong>
+              <p>We map Strata directly to your current billing, timekeeping, and review cycle.</p>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <span class="benefit-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong>Uncover unbilled & written-off hours</strong>
+              <p>Identify revenue leakage across matter narratives and realization rates.</p>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <span class="benefit-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong>Enterprise-grade security</strong>
+              <p>SOC 2 Type II compliant with zero data retention on third-party models.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="trust-footer">
+          <p class="trust-label">Built for modern legal & advisory practices</p>
+        </div>
+      </section>
+
+      <!-- Columna derecha: Tarjeta del formulario de Demo -->
+      <section class="demo-card" aria-labelledby="form-title">
+        <div class="demo-card__header">
+          <h2 id="form-title">Schedule your 30-minute session</h2>
+          <p>Tell us a bit about your firm so we can prepare a relevant walkthrough.</p>
+        </div>
+
+        <form id="demoForm" class="demo-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="workEmail">Work email *</label>
+            <input type="email" id="workEmail" name="workEmail" placeholder="jane@firm.com" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firmName">Firm or company name *</label>
+              <input type="text" id="firmName" name="firmName" placeholder="Acme LLP" required />
+            </div>
+
+            <div class="form-group">
+              <label for="firmSize">Firm size</label>
+              <select id="firmSize" name="firmSize">
+                <option value="" disabled selected>Select size</option>
+                <option value="1-10">1 – 10 professionals</option>
+                <option value="11-50">11 – 50 professionals</option>
+                <option value="51-200">51 – 200 professionals</option>
+                <option value="200+">200+ professionals</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">What are you hoping to improve? <span class="optional">(Optional)</span></label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="3"
+              placeholder="e.g., Pre-bill review bottlenecks, write-offs, time entry compliance..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Request Demo
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <p class="form-disclaimer">
+            By submitting this form, you agree to Strata’s Privacy Policy. We’ll reach out within one business day.
+          </p>
+        </form>
+
+        <!-- Mensaje de confirmación al enviar -->
+        <div id="formSuccess" class="form-success" hidden>
+          <div class="success-badge">✓</div>
+          <h3>Request received</h3>
+          <p>Thanks for reaching out. A Strata specialist will send calendar times shortly.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById('demoForm');
+    const successBox = document.getElementById('formSuccess');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      form.hidden = true;
+      successBox.hidden = false;
+    });
+  </script>
+</body>
+</html>
