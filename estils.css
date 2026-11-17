@@ -1375,3 +1375,91 @@ header.demo-navbar {
     padding: 20px 18px;
   }
 }
+
+/*Governament*/
+
+.workflow-section {
+  max-width: 1100px; 
+  margin: 48px auto 0;
+  font-family: inherit;
+}
+
+
+.workflow-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.step-number {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  font-family: monospace;
+}
+
+.step-line {
+  height: 2px;
+  flex-grow: 1;
+  border-radius: 2px;
+}
+
+
+.step-1 .step-line { background-color: #eab308; } /* Amarillo/Dorado */
+.step-2 .step-line { background-color: #10b981; } /* Verde */
+.step-3 .step-line { background-color: #3b82f6; } /* Azul */
+.step-4 .step-line { background-color: #9ca3af; } /* Gris */
+
+
+.step-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 4px 0;
+}
+
+.step-desc {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.security-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding-top: 24px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.security-footer .dot {
+  color: #d1d5db;
+}
+
+/*móviles */
+@media (max-width: 768px) {
+  .workflow-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .workflow-steps {
+    grid-template-columns: 1fr;
+  }
+}
