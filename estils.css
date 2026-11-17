@@ -980,32 +980,6 @@ header.demo-navbar {
   text-align: center;
 }
 
-.atlas-node--core {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 12px 24px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #deffe3, #ebf4ff);
-  border: 1px solid #b3ccff;
-  font-weight: 500;
-  color: #111827;
-}
-
-.atlas-nodes-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-}
-
-.atlas-node {
-  padding: 16px;
-  border-radius: 12px;
-  background-color: #f9fafb;
-  border: 1px solid var(--line);
-  font-size: 0.875rem;
-  color: #374151;
-}
-
 .atlas-pillars {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1075,35 +1049,7 @@ header.demo-navbar {
   font-size: 0.9rem;
 }
 
-.atlas-query-result {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
-}
 
-.atlas-result-card {
-  background-color: #f9fafb;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 16px;
-}
-
-.atlas-result-card strong {
-  display: block;
-  font-size: 0.9rem;
-  color: #111827;
-  margin-bottom: 4px;
-}
-
-.atlas-result-card p {
-  font-size: 0.85rem;
-  color: #6b7280;
-  line-height: 1.5;
-  margin: 0;
-}
 
 /* ROLES SECTION*/
 .roles-section {
