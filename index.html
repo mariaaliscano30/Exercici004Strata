@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pagina</title>
-  <link rel="stylesheet" href="global.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strata — Exercici004</title>
   <link rel="icon" href="assets/img/strata-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="estils.css">
   <script defer src="assets/js/vendor/three.min.js"></script>
-  <script defer src="assets/js/hero-graph.js"></script>
   <script defer src="assets/js/vendor/3d-force-graph.min.js"></script>
+  <script defer src="assets/js/hero-graph.js"></script>
 </head>
 <body>
   <header class ="navbar">
     <img src="assets/img/strata-logo.svg" alt="Strata-Logo" class="logo" width="120">
     <div class="links_internos">
-      <a>Platform</a>
-      <a>Workflows</a>
-      <a>Atlas</a>
+      <a href="#platform" class="nav-link">Platform</a>
+      <a href="#workflows" class="nav-link">Workflows</a>
+      <a href="#atlas" class="nav-link">Atlas</a>
     </div>
-    <a class = "blanco">See us at ILTACON Aug 2026</a>
-    <a class = "negro">Book a Demo</a>
-    </div>
+    <a class = "blanco"> <span class = "rojo"></span>See us at ILTACON Aug 2026</a>
+    <a href="formulario.html" class = "negro">Book a Demo</a>
   </header>
   <section class ="hero">
     <div class ="titol">
@@ -29,15 +28,15 @@
     <h1>The work your firm <br> doesn't bill for, <span class="destacado">done</span>.</h1>
     <h3>AI agents that run the operational work  your firm doesnt bill for. We turn it into <br> recovered revenue and reclaimed capacity.</h3>
     <div class = "linkshero" >
-      <a class = "negro">Book a Demo</a>
-      <a class = "transparente">See the platform ↓</a>
+      <a href="formulario.html" class = "negro">Book a Demo</a>
+      <a href="#platform" class = "transparente">See the platform ↓</a>
     </div>
   </div>
   <div class="imagen-hero">
     <img src="assets/img/assets/img/nexus-screenshot.png" alt="img-hero">
   </div>
   </section>   
-  <section class ="Platform">
+  <section id="platform" class ="Platform">
     <h3>THE PLATFORM, BRIEFLY</h3>
     <h1>One platform. Three surfaces.</h1>
     <div class="platform-surfaces">
@@ -45,12 +44,13 @@
         <h4>Strata <span class="negrita">Atlas</span></h4>
         <p>Where your firm operational map lives. Data sources connected, 
           knowledge organized, ontology managed, workflows configured. The technical surface, operated by your innovation and IT teams alongside ours.</p>
+        <p>Where your firm’s operational map lives. Data sources connected, knowledge organized, ontology managed, workflows configured. The technical surface, operated by your innovation and IT teams alongside ours.</p>
       </div>
-      <div class="nexus">
+    <div class="nexus">
         <h4>Strata <span class="negrita">Nexus</span></h4>
         <p>The executive dashboard. Operational Value at the top: Time Saved, Revenue Recovered. Every workflow health, every integration’s status, 
           and a Morning Brief in your inbox. Built for the CIO, CFO, COO and Managing Partner.</p>
-      </div>
+    </div>
       <div class="canvas">
         <h4>Strata <span class="negrita">Canvas</span></h4>
         <p>The design surface for new automations. Workflows get built here, 
@@ -114,7 +114,85 @@
        High-volume, rule-heavy, and exactly what agents are for.</p>
        <div class="fletxa">→</div>
   </div>     
+  <section class = "franja-de-missatge">
+    <div class="missatge">
+      <p class = "missatge1">Every workflow we run is a named automation with an owner and binary acceptance criteria.</p>
+      <p class = "missatge2"> We don’t lead with the AI. We lead with the numbers it moves.</p>
+    </div>
+    </section >
+  <section class = "operationalvalue">
+    <div>
+      <h3> <span class="marker"></span>OPERATIONAL VALUE</h3>
+      <h1>Two numbers. Reported every week. <br> Denominated in dollars and hours.</h1>
+      <div class = "operationalvalue-numbers">
+      <div class = "titolsnumeros">
+        <div>STRATA NEXUS · OPERATIONAL VALUE</div>
+        <div>ILLUSTRATIVE · MID-SIZE FIRM · MONTHLY</div>
+      </div>
+      <br/><hr/>
+      <div class = "columnasnumeros">
+      <div class = "numeros1">
+        <span class="marker1"></span>
+        <div>REVENUE RECOVERED</div>
+        <h1><span class="gris">$</span>428,610</h1>
+        <div>Dollars collected that would have been written off.<span class = "subnumeros">+18% MoM</span></div>
+      </div>
+      <div class = "numeros2">
+        <span class="marker1"></span>
+        <div>CAPACITY RECLAIMED</div>
+        <h1>1,284<span class="gris">hrs</span></h1>
+        <div>Hours returned to paralegals, billing, and intake.<span class = "subnumeros">≈ 12 FTE-weeks</span></div>  
+    </div>
+    </div> 
+    </div> 
+    </div>
+  </section>
+ <section class="fromthefield">
+  <div class="ftf-container">
+  
+    <div class="ftf-left">
+      <div class="ftf-tag">
+        <span class="marker-verde"></span> FROM THE FIELD
+      </div>
+      <h2 class="ftf-title">13,000</h2>
+      <div class="ftf-subtitle">INVOICES A MONTH, ONE CLIENT FIRM</div>
+      
+      <p class="ftf-desc">
+        That was the workload for one firm’s five-to-seven-person appeals team, and below the appeal threshold, the money got walked away from. Strata’s agents now analyze every line-item deduction and draft each appeal narrative for attorney review. Nothing is auto-submitted. The attorneys decide; the agents do the work that made deciding too expensive.
+      </p>
+      
+      <p class="ftf-footer">
+        Invoice appeals is one named automation. The same platform runs billing follow-up, lateral onboarding, and trust accounting.
+      </p>
+    </div>
 
+    <div class="ftf-card">
+      <div class="ftf-card-header">
+        <span>ONE CLIENT FIRM</span>
+      </div>
+      
+      <div class="ftf-card-row">
+        <span>E-billing portals</span>
+        <span class="ftf-card-value">19</span>
+      </div>
+      
+      <div class="ftf-card-row">
+        <span>Appeals cycle</span>
+        <span class="ftf-card-value">4–6 weeks</span>
+      </div>
+      
+      <div class="ftf-card-row">
+        <span>Appeals team</span>
+        <span class="ftf-card-value">5–7 people</span>
+      </div>
+      
+      <div class="ftf-card-row" style="border-bottom: none;">
+        <span> Auto-submitted appeals</span>
+        <span class="ftf-card-value">0</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 <section>
   <h6 class="gran">STRATA ATLAS</h6>
@@ -242,4 +320,3 @@
 </section>
 </body>
 </html>
-</head>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Demo · Strata</title>
+  <link rel="icon" href="assets/img/strata-icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="estils.css" />
+</head>
+<body class="demo-page">
+  <header class="demo-navbar">
+    <div class="demo-navbar__inner">
+      <a href="index.html" class="demo-brand" aria-label="Strata Home">
+        <img src="assets/img/strata-logo.svg" alt="Strata" width="115" />
+      </a>
+
+      <a href="index.html" class="demo-back-link">← Back to site</a>
+    </div>
+  </header>
+
+  <main class="demo-main">
+    <div class="demo-wrapper">
+      <span class="demo-eyebrow">BOOK A DEMO</span>
+      <h1 class="demo-headline">See what your<br>firm is writing off.</h1>
+      <p class="demo-subheadline">
+        Thirty minutes, built around how your firm actually works. No generic tour.
+      </p>
+
+      <form id="demoForm" class="demo-form" novalidate>
+        <div class="demo-form-row">
+          <div class="demo-form-group">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+
+          <div class="demo-form-group">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+        </div>
+
+        <div class="demo-form-group">
+          <label for="firmName">Firm</label>
+          <input type="text" id="firmName" name="firmName" required />
+        </div>
+
+        <div class="demo-form-group">
+          <label for="workEmail">Work email</label>
+          <input type="email" id="workEmail" name="workEmail" placeholder="you@firm.com" required />
+        </div>
+
+        <div class="demo-form-group">
+          <label for="role">Role <span class="demo-optional">(optional)</span></label>
+          <select id="role" name="role">
+            <option value="" selected>Select a role</option>
+            <option value="managing-partner">Managing Partner</option>
+            <option value="cio-cto">CIO / CTO / Innovation</option>
+            <option value="cfo-coo">CFO / COO / Finance</option>
+            <option value="billing-operations">Billing / Revenue Operations</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="demo-form-group">
+          <label for="notes">Anything specific you'd like to cover? <span class="demo-optional">(optional)</span></label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="demo-btn-submit">Book a Demo</button>
+      </form>
+
+      <div id="formSuccess" class="demo-success" hidden>
+        <h3>Request received</h3>
+        <p>Thanks for reaching out. A Strata specialist will send calendar times shortly.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const form = document.getElementById('demoForm');
+    const successBox = document.getElementById('formSuccess');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      form.hidden = true;
+      successBox.hidden = false;
+    });
+  </script>
+</body>
+</html>
