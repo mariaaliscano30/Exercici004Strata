@@ -613,3 +613,259 @@ header {
     font-size: 1.15rem;
   }
 }
+
+
+body.demo-page {
+  background-color: #ffffff;
+  color: #111827;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+/*FORMULARIOOOOO*/
+/* Navbar superior */
+header.demo-navbar {
+  display: block;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #f1f3f5;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.demo-navbar__inner {
+  width: 100%;
+  max-width: 1200px;
+  height: 76px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.demo-brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.demo-back-link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.demo-back-link:hover {
+  color: #111827;
+}
+
+/* Contenedor central de una sola columna */
+.demo-main {
+  padding: 64px 24px 96px;
+}
+
+.demo-wrapper {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.demo-eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.demo-headline {
+  font-size: 3.35rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: #111827;
+  margin: 0 0 18px 0;
+}
+
+.demo-subheadline {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #6b7280;
+  margin: 0 0 40px 0;
+}
+
+/* Formulario */
+.demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.demo-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.demo-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.demo-form label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #4b5563;
+}
+
+.demo-optional {
+  color: #9ca3af;
+}
+
+.demo-form input,
+.demo-form select,
+.demo-form textarea {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  color: #111827;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.demo-form input::placeholder,
+.demo-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+.demo-form input:focus,
+.demo-form select:focus,
+.demo-form textarea:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.06);
+}
+
+.demo-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.demo-form textarea {
+  resize: vertical;
+}
+
+.demo-btn-submit {
+  margin-top: 6px;
+  width: 100%;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.demo-btn-submit:hover {
+  background-color: #262626;
+}
+
+.demo-btn-submit:active {
+  transform: scale(0.99);
+}
+
+.demo-success {
+  padding: 32px 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #fafafa;
+}
+
+.demo-success h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 8px 0;
+}
+
+.demo-success p {
+  font-size: 0.9375rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* FORMULARIO: 768px y 390px */
+@media (max-width: 768px) {
+  .demo-navbar__inner {
+    height: 68px;
+    padding: 0 24px;
+  }
+
+  .demo-main {
+    padding: 48px 24px 72px;
+  }
+
+  .demo-headline {
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .demo-navbar__inner {
+    height: 60px;
+    padding: 0 18px;
+  }
+
+  .demo-main {
+    padding: 36px 18px 56px;
+  }
+
+  .demo-headline {
+    font-size: 2.15rem;
+  }
+
+  .demo-headline br {
+    display: none;
+  }
+
+  .demo-subheadline {
+    font-size: 0.95rem;
+    margin-bottom: 32px;
+  }
+
+  .demo-form {
+    gap: 18px;
+  }
+
+  .demo-form-row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .demo-form input,
+  .demo-form select,
+  .demo-form textarea {
+    font-size: 16px;
+    padding: 11px 12px;
+  }
+}
