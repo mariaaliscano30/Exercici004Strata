@@ -253,8 +253,8 @@ font-size: 1.5em;
 }
 
 .contenidor{
-  max-width:20px;
-  margin: 50 auto;
+  max-width:90px;
+  margin: 150 auto;
   padding: 32px;
 }
 
@@ -264,7 +264,8 @@ font-size: 1.5em;
   grid-template-rows:  1fr,1fr;
   border-top:1px dotted;
   justify-items: center;
-  margin:auto;
+
+
 
 }
 
