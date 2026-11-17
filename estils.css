@@ -223,7 +223,7 @@ font-size: 1.5em;
 .separador{
     padding:40px;
     position:relative;
-    display: grid;
+    display: column;
     gap:50px;
     align-items:start;
     border-bottom: 1px dotted ;
