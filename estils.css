@@ -279,6 +279,12 @@ font-size: 1.5em;
   -webkit-text-fill-color:transparent;
   background-clip:content-box;
 }
+.llista{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display:flex;
+  flex-direction:column;
+  grid-template-columns: 1fr,1fr,1fr,1fr;
+}
 
 .pas{
   border-bottom-color: rgba(194,34,21);
