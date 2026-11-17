@@ -225,7 +225,7 @@ font-size: 1.5em;
     position:relative;
     display: column;
     gap:50px;
-    align-items:start;
+    align-items:center;
     border-bottom: 1px dotted ;
     border-bottom-color: rgba(194, 255, 123, 0.5);
     transition: all 0.8 ease;
