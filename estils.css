@@ -1,5 +1,47 @@
-/*cabecera*/
+/*GLOBAL*/
+:root {
+  --bg: #ffffff;
+  --line: #e5e7eb;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+}
+
+img, svg, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 5em;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 1.6em;
+  color: grey;
+}
+
+h3 {
+  color: rgb(122, 122, 122);
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+/* =========================================
+   CABECERA
+   ========================================= */
 header {
   position: sticky;
   top: 0%;
@@ -13,40 +55,17 @@ header {
   border-bottom: 1px solid var(--line);
 }
 
-
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-weight: 400;
-}
-
-h1{
-  font-weight: 500;
-  font-size: 5em;
-}
-
-h4{
-  font-weight: 300;
-  font-size: 1.6em;
-  color: grey;
-}
-
-h3{
-color: rgb(122, 122, 122);
-font-weight: 400;
-font-size: 1.5em;
-}
-
-.nav-link{
+.nav-link {
   color: grey;
   text-decoration: none;
 }
 
-.linksalado, .links_internos{
+.linksalado, .links_internos {
   display: flex;
   gap: 20px;
 }
 
-.rojo{
+.rojo {
   display: inline-block;
   width: 10px;
   height: 9px;
@@ -55,73 +74,74 @@ font-size: 1.5em;
   margin-right: 10px;
 }
 
-.blanco{
+.blanco {
   background-color: #ffffff;
   padding: 10px 20px;
-  border-radius: 20px; 
+  border-radius: 20px;
   text-decoration: none;
   border: 1px solid #d1d5db;
   color: grey;
 }
 
-
-.negro{
+.negro {
   background-color: #000000;
-  color: #ffffff;       
+  color: #ffffff;
   padding: 10px 20px;
-  border-radius: 20px;     
+  border-radius: 20px;
   text-decoration: none;
 }
 
-/*hero*/
-
-.hero{
+/* HERO*/
+.hero {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   padding: 100px 100px 0px 150px;
   position: relative;
+  isolation: isolate;
   z-index: 1;
   min-height: 100vh;
   overflow: hidden;
   background-color: #ffffff;
-  background-image: 
-    radial-gradient(circle at 90% 10%, rgba(253, 164, 175, 0.5) 0%, transparent 50%), 
-    radial-gradient(circle at 100% 5%, rgba(255, 233, 169, 0.6) 0%, transparent 40%),  
+  background-image:
+    radial-gradient(circle at 90% 10%, rgba(253, 164, 175, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 100% 5%, rgba(255, 233, 169, 0.6) 0%, transparent 40%),
     radial-gradient(circle at 80% 0%, rgba(255, 227, 230, 0.5) 0%, transparent 50%);
 }
 
 .imagen-hero {
-    display: inline-flex;
-    align-self: center;
-    margin-top: 150px;
-    margin-bottom: 0px; 
-    position: relative;
-    height: 550px;     
-    overflow: hidden; 
-    border-radius: 20px; 
-    box-shadow: 6px -43px 46px 20px rgba(0, 0, 0, 0.066);   
+  display: inline-flex;
+  align-self: center;
+  margin-top: 150px;
+  margin-bottom: 0px;
+  position: relative;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 6px -43px 46px 20px rgba(0, 0, 0, 0.066);
 }
 
 .imagen-hero img {
-    width: 1250px;  
-    object-fit: cover; 
-    object-position: top center; 
+  width: 1250px;
+  object-fit: cover;
+  object-position: top center;
 }
 
-.transparente{
+.transparente {
   padding: 10px 20px;
-  border-radius: 20px; 
+  border-radius: 20px;
   color: black;
   text-decoration: none;
 }
-.linkshero{
+
+.linkshero {
   margin-top: 50px;
   display: flex;
   gap: 15px;
 }
-.destacado{
-  background: linear-gradient(135deg, #33c891, #1e62d0, #b163ff); 
+
+.destacado {
+  background: linear-gradient(135deg, #33c891, #1e62d0, #b163ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,7 +149,6 @@ font-size: 1.5em;
   display: inline-block;
 }
 
-/* El contenedor que crea el script se llama .hero-graph */
 .hero-graph {
   position: absolute !important;
   top: 0 !important;
@@ -148,27 +167,30 @@ font-size: 1.5em;
   position: relative;
   z-index: 10;
 }
-/*platform*/
 
-.negrita{
+/*PLATFORM*/
+.negrita {
   font-weight: 500;
   color: black;
 }
-.Platform{
+
+.Platform {
   display: flex;
   flex-direction: column;
   padding: 100px 100px 100px 150px;
   background-color: #ffff;
 }
-.platform-surfaces{
+
+.platform-surfaces {
   display: flex;
   gap: 20px;
 }
-.atlas, .nexus, .canvas, .core{
-  flex: 1; 
+
+.atlas, .nexus, .canvas, .core {
+  flex: 1;
   border-radius: 20px;
   padding: 30px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   align-items: flex-start;
 }
 
@@ -178,97 +200,103 @@ font-size: 1.5em;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.atlas{
+.atlas {
   background: linear-gradient(to top, #ffffff, #deffe3);
-  border: 1px solid#adffbf;
+  border: 1px solid #adffbf;
 }
 
-.nexus{
+.nexus {
   background: linear-gradient(to top, #f9fafb, #ebf4ff);
   border: 1px solid #b3ccff;
 }
 
-.canvas{
+.canvas {
   background: linear-gradient(to top, #fefcff, #f0e1f7);
   border: 1px solid #e9bcff;
 }
-.core{
-  margin-top: 20px;
+
+.core {
   background: linear-gradient(to top, #fffdf8, #fff6df);
   border: 1px solid #ffedc3;
   margin-top: 50px;
   display: flex;
   align-items: center;
 }
-.core h4{
+
+.core h4 {
   padding-right: 20px;
 }
 
-/*franja-de-missatge*/
-.franja-de-missatge{
+/* FRANJA DE MISSATGE*/
+.franja-de-missatge {
   background-color: #fcfff9;
   padding: 100px 100px 100px 150px;
-  background-image: 
+  background-image:
     radial-gradient(circle at 100% 0%, rgba(164, 173, 253, 0.4) 0%, transparent 50%),
     radial-gradient(circle at 0% 100%, rgba(195, 255, 204, 0.5) 0%, transparent 50%);
 }
 
-.missatge1{
+.missatge1 {
   font-size: 1.6em;
   line-height: 1.6;
   text-align: center;
 }
-.missatge2{
+
+.missatge2 {
   font-size: 1.2em;
   line-height: 1.6;
   color: grey;
   text-align: center;
 }
-/*operationalvalue*/
 
-.operationalvalue{
+/*OPERATIONAL VALUE */
+.operationalvalue {
   background-color: #ffff;
   padding: 100px 100px 100px 150px;
-  display: inline-block;
+  display: block;
 }
-.operationalvalue h3{
+
+.operationalvalue h3 {
   font-weight: 400;
   font-size: 1em;
   color: grey;
 }
+
 .marker {
   display: inline-block;
   width: 40px;
   height: 12px;
-  background: linear-gradient(to right,#00ba63, #0072ff);
-  border-radius: 3px; 
-  margin-right: 10px; 
+  background: linear-gradient(to right, #00ba63, #0072ff);
+  border-radius: 3px;
+  margin-right: 10px;
 }
 
 .marker1 {
+  display: inline-block;
   width: 40px;
   height: 10px;
   background: linear-gradient(to right, #00ba63, #0072ff);
-  border-radius: 10px; 
-  margin-right: 10px; 
+  border-radius: 10px;
+  margin-right: 10px;
 }
 
-.operationalvalue h1{
+.operationalvalue h1 {
   font-weight: 500;
   font-size: 3em;
   color: black;
 }
-.operationalvalue-numbers{
+
+.operationalvalue-numbers {
   background-color: #ffff;
-  color:grey;
+  color: grey;
   gap: 20px;
   box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  padding: 40px 40px 40px 40px;
-  box-sizing: border-box; 
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-.titolsnumeros{
+.titolsnumeros {
   display: flex;
   justify-content: space-between;
   font-weight: 100;
@@ -276,37 +304,34 @@ font-size: 1.5em;
   color: grey;
 }
 
-.columnasnumeros{
+.columnasnumeros {
   display: flex;
   justify-content: space-between;
-  gap: 30px;  
+  gap: 30px;
 }
 
-.subnumeros{
-margin-left: 10px;
-display: inline-block;
-color: rgb(1, 0, 0);
-border: 1px solid #d1d5db;
-border-radius: 20px;
-padding: 5px 10px;
-background-color: #ffff;
-background: linear-gradient(to right, #76ff9f81, #7787ff61);
+.subnumeros {
+  margin-left: 10px;
+  display: inline-block;
+  color: rgb(1, 0, 0);
+  border: 1px solid #d1d5db;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background: linear-gradient(to right, #76ff9f81, #7787ff61);
 }
 
-.gris{
+.gris {
   color: grey;
   font-weight: 100;
   font-size: 1em;
 }
 
-
-/*fromthefield*/
-
+/* FROM THE FIELD */
 .fromthefield {
   background-color: #080a0c;
   background-image: radial-gradient(circle at 90% 10%, rgba(30, 90, 60, 0.3) 0%, transparent 50%);
   color: white;
-  padding: 100px 100px 0px 150px;
+  padding: 100px 100px 100px 150px;
   display: flex;
   justify-content: center;
 }
@@ -383,6 +408,7 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   padding: 30px 40px;
   position: relative;
   backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
 .ftf-card::before {
@@ -396,7 +422,7 @@ background: linear-gradient(to right, #76ff9f81, #7787ff61);
   border-radius: 20px 30px 20px 30px;
 }
 
-ftf-card-header {
+.ftf-card-header {
   font-size: 0.75rem;
   color: #6b7280;
   letter-spacing: 1px;
@@ -409,6 +435,7 @@ ftf-card-header {
   align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  gap: 12px;
 }
 
 .ftf-card-row span:first-child {
@@ -420,9 +447,10 @@ ftf-card-header {
   font-size: 1.5rem;
   font-weight: 500;
   color: #ffffff;
+  white-space: nowrap;
 }
 
-/*para moviles*/
+/*(768px)*/
 @media (max-width: 768px), (prefers-reduced-motion: reduce) {
   .hero-graph {
     display: none !important;
@@ -430,7 +458,6 @@ ftf-card-header {
 }
 
 @media (max-width: 768px) {
-  /* Cabecera limpia: solo logo a la izquierda y botón negro a la derecha */
   header {
     padding: 14px 20px;
     justify-content: space-between;
@@ -441,7 +468,6 @@ ftf-card-header {
     display: none;
   }
 
-  /* Espaciados generales de tus secciones */
   .hero,
   .Platform,
   .franja-de-missatge,
@@ -468,7 +494,6 @@ ftf-card-header {
     display: none;
   }
 
-  /* Botones del Hero en horizontal como en la captura */
   .linkshero {
     flex-direction: row;
     align-items: center;
@@ -476,14 +501,12 @@ ftf-card-header {
     margin-top: 28px;
   }
 
-  /* Captura del dashboard redondeada completa */
   .imagen-hero {
     margin-top: 40px;
     border-radius: 14px;
     max-height: none;
   }
 
-  /* Tarjetas de Platform apiladas (Atlas, Nexus, Canvas, Core) */
   .platform-surfaces {
     flex-direction: column;
     gap: 16px;
@@ -496,7 +519,6 @@ ftf-card-header {
     gap: 10px;
   }
 
-  /* Franja de mensaje */
   .missatge1 {
     font-size: 1.3em;
   }
@@ -505,7 +527,6 @@ ftf-card-header {
     font-size: 1.05em;
   }
 
-  /* Operational Value con separación entre las dos métricas */
   .titolsnumeros {
     flex-direction: column;
     gap: 4px;
@@ -522,7 +543,6 @@ ftf-card-header {
     border-bottom: 1px solid #e5e7eb;
   }
 
-  /* From the field: texto arriba, tarjeta oscura abajo */
   .ftf-container {
     flex-direction: column;
     gap: 35px;
@@ -530,6 +550,11 @@ ftf-card-header {
 
   .ftf-title {
     font-size: 4.2rem;
+  }
+
+  .ftf-left {
+    width: 100%;
+    max-width: 100%;
   }
 
   .ftf-card {
@@ -540,7 +565,7 @@ ftf-card-header {
   }
 }
 
-/* MÓVIL */
+/* PARA MÓVIL (390px y 360px)*/
 @media (max-width: 400px) {
   .hero,
   .Platform,
@@ -578,6 +603,10 @@ ftf-card-header {
 
   .ftf-title {
     font-size: 3.6rem;
+  }
+
+  .ftf-card {
+    padding: 20px 18px;
   }
 
   .ftf-card-value {
