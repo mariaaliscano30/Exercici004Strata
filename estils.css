@@ -263,7 +263,8 @@ font-size: 1.5em;
   flex-direction:row;
   grid-template-rows:  1fr,1fr;
   border-top:1px dotted;
-  justify-items: auto;
+  justify-items: center;
+  margin:auto;
 
 }
 
