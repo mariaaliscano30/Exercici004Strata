@@ -202,10 +202,6 @@
       </div>
     </div>
   </section>
-
-  <!-- =========================================
-       ATLAS: Your firm's knowledge, made operational
-       ========================================= -->
   <section id="atlas" class="atlas-section">
     <div class="atlas-header">
       <div class="section-tag">
@@ -218,7 +214,9 @@
     </div>
 
     <div class="atlas-visual">
-      <!-- Usa la captura del grafo de Atlas si la tienes en assets/img/, o este mapa visual limpio -->
+     <div class="atlas-visual">
+      <img src="assets/img/atlas-screenshot.webp" alt="Strata Atlas Knowledge Graph" />
+    </div>
       <img src="assets/img/atlas-screenshot.png" alt="Strata Atlas Knowledge Graph" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
       <div class="atlas-fallback-map" style="display: none;">
         <div class="atlas-node atlas-node--core">Strata Core Ontology</div>
@@ -256,8 +254,6 @@
         <p>Full lineage from source document to agent action, with zero data retention on third-party models.</p>
       </div>
     </div>
-
-    <!-- Barra interactiva de consulta a Atlas -->
     <div class="atlas-query-box">
       <form class="atlas-query-form" onsubmit="event.preventDefault(); document.getElementById('atlasAnswer').hidden = false;">
         <input type="text" value="Which e-billing clients have a 30-day appeal window and block-billing restrictions?" aria-label="Ask Strata Atlas" />
@@ -275,10 +271,6 @@
       </div>
     </div>
   </section>
-
-  <!-- =========================================
-       ROLES: Built for the people who run the firm
-       ========================================= -->
   <section class="roles-section">
     <div class="roles-header">
       <div class="section-tag">
@@ -332,10 +324,6 @@
       </div>
     </div>
   </section>
-
-  <!-- =========================================
-       CTA FINAL + FOOTER
-       ========================================= -->
   <section class="cta-final">
     <div class="cta-final__inner">
       <div class="section-tag">
