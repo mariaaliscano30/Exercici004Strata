@@ -265,12 +265,7 @@ font-size: 1.5em;
   border-top:1px dotted;
   justify-items: center;
 }
-.numero{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display:flex;
-  flex-direction:column;
-  grid-template-columns: 1fr,1fr,1fr,1fr;
-}
+
 .barra{
   width:5px;
   height:2px;
