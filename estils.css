@@ -235,3 +235,10 @@ footer>link a{
 .gran{
   font-size:60px;
 }
+
+@media(max-width:768px){
+  hero{
+    margin:auto;
+  }
+}
+
