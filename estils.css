@@ -66,9 +66,9 @@
 .etiqueta1{
   margin:20%;
   background-color:#1e62d0;
- height:20px;
- width:40px;
- transition:ease;
+ height:auto;
+ width:auto;
+ transition: width 0.8s ease, height 0.8s ease;
  transition-duration: 5s;
 }
 
@@ -84,9 +84,9 @@
 .etiqueta3{
   margin:60%;
   background-color:#87088e;
- height:20px;
- width:40px;
- transition:ease;
+ height:auto;
+ width:auto;
+ transition: width 0.8s ease, height 0.8s ease;
  transition-duration: 5s;
 
 }
@@ -94,9 +94,9 @@
 .etiqueta4{
   margin:70%;
   background-color:#d1f11b;
- height:20px;
- width:40px;
- transition:ease;
+ height:auto;
+ width:auto;
+ transition:width 0.8s ease, height 0.8s ease;
  transition-duration: 5s;
 }
 
