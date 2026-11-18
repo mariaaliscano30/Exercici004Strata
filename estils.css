@@ -49,8 +49,8 @@
 }
 
 .contenidor{
-  max-width:90px;
-  margin: 150 auto;
+  width:auto;
+  margin: auto;
   padding: 32px;
 }
 
