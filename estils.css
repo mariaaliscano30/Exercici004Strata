@@ -85,6 +85,7 @@
   gap:70px;
   align-items:start;
   transition: padding .2 ease;
+  padding:hover;
 }
 
 .tonic{
