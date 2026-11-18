@@ -68,16 +68,16 @@
   background-color:#1e62d0;
  height:20px;
  width:40px;
- transition:ease-out;
+ transition:ease;
  transition-duration: 5s;
 }
 
 .etiqueta2{
   margin:40%;
   background-color:#27ab21;
- height:20px;
- width:40px;
- transition:ease-out;
+ height:auto;
+ width:auto;
+ transition:width 0.8s ease, height 0.8s ease;
  transition-duration: 5s;
 }
 
@@ -86,16 +86,17 @@
   background-color:#87088e;
  height:20px;
  width:40px;
- transition:ease-out;
+ transition:ease;
  transition-duration: 5s;
+
 }
 
 .etiqueta4{
-  margin:80%;
+  margin:70%;
   background-color:#d1f11b;
  height:20px;
  width:40px;
- transition:ease-out;
+ transition:ease;
  transition-duration: 5s;
 }
 
