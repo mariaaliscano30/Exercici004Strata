@@ -70,6 +70,7 @@
  width:auto;
  transition: width 0.8s ease, height 0.8s ease;
  transition-duration: 5s;
+ padding:auto;
 }
 
 .etiqueta2{
@@ -79,6 +80,7 @@
  width:auto;
  transition:width 0.8s ease, height 0.8s ease;
  transition-duration: 5s;
+ padding:auto;
 }
 
 .etiqueta3{
@@ -88,7 +90,7 @@
  width:auto;
  transition: width 0.8s ease, height 0.8s ease;
  transition-duration: 5s;
-
+padding:auto;
 }
 
 .etiqueta4{
@@ -98,6 +100,7 @@
  width:auto;
  transition:width 0.8s ease, height 0.8s ease;
  transition-duration: 5s;
+ padding:auto;
 }
 
 .barra{
