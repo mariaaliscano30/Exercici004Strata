@@ -188,6 +188,11 @@ border:50px;
   border-radius: 1px dotted;
   font-size:11px;
   position:relative;
+  background-color:var(rgb(27, 27, 124),rgb(49, 219, 49),rgb(10, 153, 139));
+  -webkit-background-color:transparent;
+  display:block;
+  width:20px;
+  height:20px;
 }
 
 .accions_c ::before{
@@ -250,8 +255,10 @@ footer>link a{
 }
 
 @media(max-width:768px){
-  hero{
+  .hero{
     margin:auto;
+    height:auto;
+    width:auto;
   }
 }
 
